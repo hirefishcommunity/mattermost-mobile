@@ -36,11 +36,13 @@ export default class RecentMentions extends PureComponent {
         actions: PropTypes.shape({
             clearSearch: PropTypes.func.isRequired,
             loadChannelsByTeamName: PropTypes.func.isRequired,
-            getPostThread: PropTypes.func.isRequired,
+            loadThreadIfNecessary: PropTypes.func.isRequired,
             getRecentMentions: PropTypes.func.isRequired,
             selectFocusedPostId: PropTypes.func.isRequired,
             selectPost: PropTypes.func.isRequired,
         }).isRequired,
+        didFail: PropTypes.bool,
+        isLoading: PropTypes.bool,
         postIds: PropTypes.array,
         theme: PropTypes.object.isRequired,
     };
@@ -97,7 +99,7 @@ export default class RecentMentions extends PureComponent {
         };
 
         Keyboard.dismiss();
-        actions.getPostThread(rootId);
+        actions.loadThreadIfNecessary(rootId);
         actions.selectPost(rootId);
         goToScreen(screen, title, passProps);
     };

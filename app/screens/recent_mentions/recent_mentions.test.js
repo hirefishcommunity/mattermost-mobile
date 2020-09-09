@@ -15,7 +15,7 @@ describe('RecentMentions', () => {
         actions: {
             clearSearch: jest.fn(),
             loadChannelsByTeamName: jest.fn(),
-            getPostThread: jest.fn(),
+            loadThreadIfNecessary: jest.fn(),
             getRecentMentions: jest.fn(),
             selectFocusedPostId: jest.fn(),
             selectPost: jest.fn(),

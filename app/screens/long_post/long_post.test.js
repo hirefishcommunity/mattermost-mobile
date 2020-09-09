@@ -16,7 +16,7 @@ jest.mock('react-native-file-viewer', () => ({
 describe('LongPost', () => {
     const baseProps = {
         actions: {
-            getPostThread: jest.fn(),
+            loadThreadIfNecessary: jest.fn(),
             selectPost: jest.fn(),
         },
         postId: 'post-id',

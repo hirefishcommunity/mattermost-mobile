@@ -69,20 +69,23 @@ export const getPostsInCurrentChannel: (a: GlobalState) => Array<PostWithFormatD
 export function makeGetPostIdsForThread(): (b: GlobalState, a: $ID<Post>) => Array<$ID<Post>> {
     return createIdsSelector(
         getAllPosts,
-        (state: GlobalState, rootId: string) => state.entities.posts.posts[rootId],
-        (posts, rootPost) => {
+        (state: GlobalState, rootId: string) => state.entities.posts.postsInThread[rootId] || [],
+        (state: GlobalState, rootId) => state.entities.posts.posts[rootId],
+        (posts, postsForThread, rootPost) => {
             const thread: Post[] = [];
 
             if (rootPost) {
                 thread.push(rootPost);
-
-                const postsArray = Object.values(posts).filter((p) => p.root_id === rootPost.id);
-                if (postsArray.length) {
-                    thread.push(...postsArray);
-                }
-
-                thread.sort(comparePosts);
             }
+
+            postsForThread.forEach((id) => {
+                const post = posts[id];
+                if (post) {
+                    thread.push(post);
+                }
+            });
+
+            thread.sort(comparePosts);
 
             return thread.map((post) => post.id);
         },

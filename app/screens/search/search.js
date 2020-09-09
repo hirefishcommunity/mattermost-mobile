@@ -60,13 +60,14 @@ export default class Search extends PureComponent {
             clearSearch: PropTypes.func.isRequired,
             handleSearchDraftChanged: PropTypes.func.isRequired,
             loadChannelsByTeamName: PropTypes.func.isRequired,
-            getPostThread: PropTypes.func.isRequired,
+            loadThreadIfNecessary: PropTypes.func.isRequired,
             removeSearchTerms: PropTypes.func.isRequired,
             searchPostsWithParams: PropTypes.func.isRequired,
             getMorePostsForSearch: PropTypes.func.isRequired,
             selectFocusedPostId: PropTypes.func.isRequired,
             selectPost: PropTypes.func.isRequired,
         }).isRequired,
+        componentId: PropTypes.string.isRequired,
         currentTeamId: PropTypes.string.isRequired,
         initialValue: PropTypes.string,
         isLandscape: PropTypes.bool.isRequired,
@@ -221,7 +222,7 @@ export default class Search extends PureComponent {
         const rootId = (post.root_id || post.id);
 
         Keyboard.dismiss();
-        actions.getPostThread(rootId);
+        actions.loadThreadIfNecessary(rootId);
         actions.selectPost(rootId);
 
         const screen = 'Thread';

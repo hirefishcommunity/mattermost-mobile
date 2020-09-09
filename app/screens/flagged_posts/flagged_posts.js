@@ -36,7 +36,7 @@ export default class FlaggedPosts extends PureComponent {
         actions: PropTypes.shape({
             clearSearch: PropTypes.func.isRequired,
             loadChannelsByTeamName: PropTypes.func.isRequired,
-            getPostThread: PropTypes.func.isRequired,
+            loadThreadIfNecessary: PropTypes.func.isRequired,
             getFlaggedPosts: PropTypes.func.isRequired,
             selectFocusedPostId: PropTypes.func.isRequired,
             selectPost: PropTypes.func.isRequired,
@@ -103,7 +103,7 @@ export default class FlaggedPosts extends PureComponent {
         };
 
         Keyboard.dismiss();
-        actions.getPostThread(rootId);
+        actions.loadThreadIfNecessary(rootId);
         actions.selectPost(rootId);
         goToScreen(screen, title, passProps);
     };

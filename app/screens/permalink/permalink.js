@@ -60,6 +60,7 @@ export default class Permalink extends PureComponent {
             handleSelectChannel: PropTypes.func.isRequired,
             handleTeamChange: PropTypes.func.isRequired,
             joinChannel: PropTypes.func.isRequired,
+            loadThreadIfNecessary: PropTypes.func.isRequired,
             selectPost: PropTypes.func.isRequired,
         }).isRequired,
         channelId: PropTypes.string,
@@ -146,7 +147,7 @@ export default class Permalink extends PureComponent {
             rootId,
         };
 
-        actions.getPostThread(rootId);
+        actions.loadThreadIfNecessary(rootId);
         actions.selectPost(rootId);
 
         goToScreen(screen, title, passProps);
