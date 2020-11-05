@@ -100,3 +100,4 @@ detox/artifacts
 
 #editor-settings
 .vscode
+fastlane/Fastfile
