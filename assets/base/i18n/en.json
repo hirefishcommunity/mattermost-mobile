@@ -637,10 +637,10 @@
   "user.settings.notifications.emailInfo": "Email notifications are sent for mentions and direct messages when you are offline or away for more than 5 minutes.",
   "user.settings.notifications.never": "Never",
   "user.settings.notifications.onlyMentions": "Only for mentions and direct messages",
-  "user.settings.push_notification.away": "Away or offline",
+  "user.settings.push_notification.away": "Driving or offline",
   "user.settings.push_notification.disabled": "Push notifications are not enabled",
   "user.settings.push_notification.disabled_long": "Push notifications have not been enabled by your System Administrator.",
   "user.settings.push_notification.offline": "Offline",
-  "user.settings.push_notification.online": "Online, away or offline",
+  "user.settings.push_notification.online": "Online, away or Driving",
   "web.root.signup_info": "All team communication in one place, searchable and accessible anywhere"
 }
