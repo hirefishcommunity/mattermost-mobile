@@ -523,7 +523,7 @@ export default class SelectServer extends PureComponent {
                                 <FormattedText
                                     style={[GlobalStyles.header, GlobalStyles.label]}
                                     id='mobile.components.select_server_view.enterServerUrl'
-                                    defaultMessage='Enter Server URL'
+                                    defaultMessage='Enter your fish community URL'
                                 />
                             </View>
                             <TextInput

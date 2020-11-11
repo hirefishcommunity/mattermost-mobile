@@ -35,7 +35,7 @@ export const GlobalStyles = StyleSheet.create({
     },
     signupButton: {
         borderRadius: 3,
-        borderColor: '#2389D7',
+        borderColor: '#5371ff',
         borderWidth: 1,
         alignItems: 'center',
         alignSelf: 'stretch',
@@ -44,7 +44,7 @@ export const GlobalStyles = StyleSheet.create({
     },
     signupButtonText: {
         textAlign: 'center',
-        color: '#2389D7',
+        color: '#5371ff',
         fontSize: 17,
     },
     buttonListItemText: {
@@ -62,7 +62,7 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor: '#fafafa',
         borderWidth: 1,
         borderRadius: 3,
-        borderColor: '#d5d5d5',
+        borderColor: '#5371ff',
     },
     button: {
         margin: 3,
@@ -73,7 +73,7 @@ export const GlobalStyles = StyleSheet.create({
     },
 
     buttonText: {
-        color: '#5890FF',
+        color: '#5371ff',
         fontSize: 18,
     },
 
@@ -108,5 +108,8 @@ export const GlobalStyles = StyleSheet.create({
         alignSelf: 'stretch',
         borderRadius: 3,
         color: '#3d3c40',
+    },
+    logo: {
+        color: '#5371ff',
     },
 });

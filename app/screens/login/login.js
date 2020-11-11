@@ -328,12 +328,12 @@ export default class Login extends PureComponent {
                 additionalStyle.backgroundColor = this.props.config.EmailLoginButtonColor;
             }
             if (this.props.config.EmailLoginButtonBorderColor) {
-                additionalStyle.borderColor = this.props.config.EmailLoginButtonBorderColor;
+                additionalStyle.borderColor = '#5371ff';
             }
 
             const additionalTextStyle = {};
             if (this.props.config.EmailLoginButtonTextColor) {
-                additionalTextStyle.color = this.props.config.EmailLoginButtonTextColor;
+                additionalTextStyle.color = '#5371ff';
             }
 
             proceed = (
@@ -455,6 +455,6 @@ const style = StyleSheet.create({
         marginTop: 15,
     },
     forgotPasswordTxt: {
-        color: '#2389D7',
+        color: '#5371ff',
     },
 });
