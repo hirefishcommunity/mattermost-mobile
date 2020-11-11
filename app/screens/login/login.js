@@ -392,7 +392,7 @@ export default class Login extends PureComponent {
                             <FormattedText
                                 style={GlobalStyles.subheader}
                                 id='web.root.signup_info'
-                                defaultMessage='All team communication in one place, searchable and accessible anywhere'
+                                defaultMessage='Fish with your community! Share, Search and Mine Gigs!'
                             />
                         </View>
                         <ErrorText
