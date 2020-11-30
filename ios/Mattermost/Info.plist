@@ -36,7 +36,11 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
+<<<<<<< HEAD
 	<string>336</string>
+=======
+	<string>332</string>
+>>>>>>> aa05751c... iOS 332 version
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>

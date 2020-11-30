@@ -241,8 +241,12 @@
 =======
   "mobile.downloader.image_saved": "Image Saved",
   "mobile.downloader.video_saved": "Video Saved",
+<<<<<<< HEAD
   "mobile.drawer.teamsTitle": "Your Communities",
 >>>>>>> f0efcc15... branding for f.i.sh
+=======
+  "mobile.drawer.teamsTitle": "Communities",
+>>>>>>> aa05751c... iOS 332 version
   "mobile.edit_channel": "Save",
   "mobile.edit_post.title": "Editing Message",
   "mobile.edit_profile.remove_profile_photo": "Remove Photo",

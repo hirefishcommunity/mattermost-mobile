@@ -21,7 +21,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.38.0</string>
 	<key>CFBundleVersion</key>
+<<<<<<< HEAD
 	<string>336</string>
+=======
+	<string>332</string>
+>>>>>>> aa05751c... iOS 332 version
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
