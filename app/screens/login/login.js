@@ -381,11 +381,15 @@ export default class Login extends PureComponent {
                         keyboardShouldPersistTaps='handled'
                         enableOnAndroid={true}
                     >
+<<<<<<< HEAD
                         <Image
                             source={require('@assets/images/logo.png')}
                             style={{height: 72, resizeMode: 'contain'}}
                         />
                         <View testID='login.screen'>
+=======
+                        <View testID='login_screen'>
+>>>>>>> 37ea8b34... commit temprorarily to not show nattermost icons
                             <Text style={GlobalStyles.header}>
                                 {this.props.config.SiteName}
                             </Text>
