@@ -236,8 +236,6 @@
   "mobile.downloader.disabled_title": "Download disabled",
   "mobile.downloader.failed_description": "An error occurred while downloading the file. Please check your internet connection and try again.\n",
   "mobile.downloader.failed_title": "Download failed",
-  "mobile.downloader.image_saved": "Image Saved",
-  "mobile.downloader.video_saved": "Video Saved",
   "mobile.drawer.teamsTitle": "Communities",
   "mobile.edit_channel": "Save",
   "mobile.edit_post.title": "Editing Message",
